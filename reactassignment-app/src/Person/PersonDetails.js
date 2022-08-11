@@ -10,8 +10,6 @@ const PersonDetails = () => {
             .then((resp) => {
                 //console.log(resp.data);
                 setperson(resp.data);
-
-
             })
 
     }, [])
