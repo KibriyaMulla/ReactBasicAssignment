@@ -5,7 +5,7 @@ import SinglePersonDetails from "./SinglePersonDetails"
 
 const PersonDetails = () => {
     const [person, setperson] = useState([]);
-  
+
     useEffect(() => {
         axios.get(" https://jsonplaceholder.typicode.com/users")
             .then((resp) => {
@@ -19,11 +19,11 @@ const PersonDetails = () => {
         <>
 
             {
-                <div className="Person">
+                <div>
                     {person.map((value, key) => {
-                        
+
                         let url = "https://avatars.dicebear.com/v2/avataaars/{{" + value.name + "}}.svg?options[mood][]="
-                    
+
                         return (
                             <SinglePersonDetails name={value.name}
                                 email={value.email}
