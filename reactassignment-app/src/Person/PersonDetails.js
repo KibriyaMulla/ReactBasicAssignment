@@ -28,7 +28,7 @@ const PersonDetails = () => {
                             <SinglePersonDetails name={value.name}
                                 email={value.email}
                                 phone={value.phone}
-                                company={value.company.name}
+                                company={value.company}
                                 website={value.website}
                                 address={value.address}
                                 url={url}

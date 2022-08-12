@@ -10,7 +10,7 @@ const SinglePersonDetails = (props) => {
             <h2>{props.name}</h2>
             <p > <b>Email : </b>{props.email}</p>
             <p > <b>Phone : </b>{props.phone}</p>
-            {/* <p> <b>Company:</b>{props.company.name}</p> */}
+            <p> <b>Company:</b>{props.company.name}</p>
             <p><b>Website : </b>{props.website}</p>
             <p> <b>Address : </b>{props.address.street},{props.address.suite},{props.address.city},{props.address.zipcode}</p>
 
