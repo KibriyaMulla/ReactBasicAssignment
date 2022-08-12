@@ -1,14 +1,18 @@
 import React from "react";
-const SinglePersonDetails=(Props)=>{
+import "./PersonDetails.css";
+const SinglePersonDetails = (props) => {
 
-    return(
+
+    return (
+        
         <div>
-            <p> Name:{Props.name}</p>
-            <p> Email:{Props.email}</p>
-            <p> Phone:{Props.phone}</p>
-            <p> Company:{Props.company}</p>
-            <p>Website:{Props.website}</p>
-            <p> Address:{Props.address}</p>   
+            <img className="Person_image" src={props.url} />
+            <p> Name:{props.name}</p>
+            <p> Email:{props.email}</p>
+            <p> Phone:{props.phone}</p>
+            <p> Company:{props.company.name}</p>
+            <p>Website:{props.website}</p>
+            <p> Address:{props.address.street},{props.address.suite},{props.address.city},{props.address.zipcode}</p>
 
         </div>
     )
