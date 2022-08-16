@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState,useRef } from "react"
 import axios from "axios"
-// import "./PersonDetails.css";
+ import "./PersonDetails.css";
 import SinglePersonDetails from "./SinglePersonDetails"
+import EditPerson from "./EditPerson";
 
 const PersonDetails = () => {
     const [person, setperson] = useState([]);
@@ -15,6 +16,9 @@ const PersonDetails = () => {
 
     }, [])
 
+    // const callbackFun=()=>{
+
+    // }
     return (
         <>
 
@@ -33,8 +37,9 @@ const PersonDetails = () => {
                                 address={value.address}
                                 url={url}
                             />
+                            
+                            
                         )
-
                     })}
 
 

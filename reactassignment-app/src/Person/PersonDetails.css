@@ -32,3 +32,23 @@
     display: flex;
     flex-direction: row;
 }
+
+.EditButtonText{
+    border-collapse: collapse;
+    border: 1px solid rgb(231, 238, 231);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-sizing: content-box;
+    text-align: center;
+    width:40%;
+    height: 90%;
+    margin-top: 150px;
+    margin-left:400px ;
+    padding-left: 30px;
+    
+}
+
+
+.Button{
+    /* margin-left:600px ;   */
+    text-align: right;
+}
