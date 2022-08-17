@@ -4,16 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import EditPerson from './Person/EditPerson';
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-  <Routes>
-    <Route path="/EditPerson" element={<EditPerson/>}/>
-    <Route path="/" element={<App/>}/>
-    
-  </Routes>
+    <Routes>
+      <Route path="/EditPerson" element={<EditPerson />} />
+      <Route path="/" element={<App />} />
+
+    </Routes>
 
   </BrowserRouter>
 );
