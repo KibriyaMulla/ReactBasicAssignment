@@ -5,20 +5,24 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import EditPerson from './Person/EditPerson';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import index from "./redux/index";
+import {Provider} from "react-redux";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/EditPerson" element={<EditPerson />} />
-      <Route path="/" element={<App />} />
+  // <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/EditPerson" element={<EditPerson />} />
+  //     <Route path="/" element={<App />} />
 
-    </Routes>
+  //   </Routes>
 
-  </BrowserRouter>
+  // </BrowserRouter>
+  
+  <Provider index={index}>
+    <App />
+  </Provider>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+
 reportWebVitals();
