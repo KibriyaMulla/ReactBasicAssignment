@@ -11,6 +11,8 @@ const reducer = combineReducers({
 const sagaMiddleware = createSagaMiddleware();
 const middleware = [sagaMiddleware];
 
-const index = createStore(reducer, {}, applyMiddleware(...middleware));
+const store = createStore(reducer, {}, applyMiddleware(...middleware));
 sagaMiddleware.run(watchergetPersonSaga);
-export default index;
+export default store;
+
+
